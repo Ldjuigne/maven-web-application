@@ -10,7 +10,7 @@ stage('3codeQuality'){
     sh "${mavenHome}/bin/mvn sonar:sonar"
   }
    stage('4uploadArtifacts'){
-    //sh "${mavenHome}/bin/mvn deploy"
+    sh "${mavenHome}/bin/mvn deploy"
     //http://54.236.93.79:8081/repository/tesla-fe-snapshots/
    //http://54.236.93.79:8081/repository/tesla-fe-releases/
   // vi pom.xml and added repository details   
